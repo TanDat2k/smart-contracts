@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy" : "npx hardhat run scripts/deploy.js  --network sepolia"
+    "deploy": "npx hardhat run scripts/deploy.js  --network sepolia",
+    "scan": "npx hardhat verify --network sepolia 0x925029a5724eb9a29bb7f959964F646f365b23F3"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.3",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
